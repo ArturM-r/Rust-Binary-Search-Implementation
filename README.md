@@ -19,3 +19,16 @@ Ordering::Greater → search left, safely subtract 1 from mid using checked_sub 
 Ordering::Less → search right, increment min
 
 Returns None if the element is not found.
+
+
+Tests
+
+The repository includes comprehensive tests:
+
+element_found – checks that existing elements return correct value and index
+
+element_not_found – checks that non-existing elements return None
+
+smallest_element_not_found – checks search for a value smaller than the smallest element
+
+empty_array – verifies that searching in an empty array returns None
